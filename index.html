@@ -140,6 +140,7 @@
       background-color: rgba(255, 255, 255, 0.49);
       font-size: 2vw;
       bottom: 8px;
+      margin-bottom: 10px;
     }
     .main img{
       max-height: 10vh;
@@ -155,6 +156,7 @@
       color: white;
       bottom: 0px;
       right: 10px;
+      margin-bottom: 10px;
     }
     .phone img{
       max-height: 10vh;
@@ -182,6 +184,12 @@
     }
 
 
+
+    .articles {
+      height: 500px;
+    }
+
+
     /* Media queries */
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {display: none;}
@@ -199,6 +207,8 @@
         left: 0px;
         bottom: 0px;
         width: 50%;
+        margin-bottom: 0px;
+        min-height: 70px;
       }
       .main img {
         max-height: 10vh;
@@ -207,10 +217,11 @@
       }
       .phone {
         font-size: 20px;
-
+        margin-bottom: 0px;
         right: 0px;
         bottom: 0px;
         width: 50%;
+        min-height: 70px;
       }
 
       .phone img {
@@ -296,7 +307,9 @@
     </div>
 
     <div class="articles">
-      
+      <div class="borders" style="background-color: orange;">
+
+      </div>
     </div>
 
     <script type="text/javascript">
