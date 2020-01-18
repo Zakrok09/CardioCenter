@@ -33,7 +33,7 @@ body, html {
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(237, 237, 237);
   margin: 0px;
   padding-left: 15vw;
 }
@@ -42,7 +42,7 @@ body, html {
   border-left-width: thin;
   border-left-color: rgb(107, 107, 107);
   border-left-style: solid;
-
+  background-color: rgb(237, 237, 237);
   text-align: center;
   text-decoration: none;
   padding: 12px 30px;
@@ -104,6 +104,7 @@ body, html {
   bottom: 0px;
   right: 10px;
   margin-bottom: 10px;
+  min(max(16px, 4vw), 30px);
 }
 .phone img{
   max-height: 10vh;
@@ -136,7 +137,7 @@ body, html {
 
 .horizbreak {
   height: 20px;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(235, 235, 235);
 }
 
 
@@ -182,21 +183,36 @@ body, html {
   padding: 0px;
   display: flex;
   flex-direction: column;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  f
 }
 
 .zaglavie {
-  background-color: rgb(0, 1, 96);
+  background-color: rgb(23, 9, 112);
+  font-weight: 500;
   color: white;
-  padding: 10px;
-  padding-left: 10px;
-  font-size: min(max(16px, 4vw), 30px);
-  font-style: italic;
+  padding: 5px;
+  padding-left: 13px;
+  font-size: min(max(16px, 3vw), 30px);
+  font-style: normal;
 }
+
+
 
 .maine {
-  padding: 10px;
+
+  font-family: 'Exo 2', sans-serif;
 }
 
+#hrz {
+
+  width: 60%;
+  position: relative;
+
+  height: 3px;
+  background-color:rgb(37, 25, 113);
+
+}
 .news {
   ;
 }
@@ -209,6 +225,12 @@ body, html {
   ;
 }
 
+.kabineti {
+  background-image: url("snimchici2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 89%;
+}
 
 
 
@@ -294,7 +316,16 @@ body, html {
     margin: 0px;
   }
 
+  .zaglavie {
+    font-weight: 500;
+    text-align: center;
+  }
 
+  #hrz {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -2,15 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>CardioBS</title>
+    <title>Кардиологичен център Бургас</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Exo+2:200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">    <link rel="stylesheet" href="jquery-ui.min.css">
     <script src="external/jquery/jquery.js"></script>
     <script src="jquery-ui.min.js"></script>
+    <script type="jquery.bgswitcher.js">
+
+    </script>
   </head>
 
   <script type="text/javascript">
@@ -22,7 +26,7 @@
       });
       $('.topnav a').mouseleave(function(){
         $(this).animate({
-          backgroundColor: "#rgb(228, 228, 228)"
+          backgroundColor: "rgb(237, 237, 237)"
         }, 200);
       });
 
@@ -47,6 +51,12 @@
         $(this).animate({
           backgroundColor: "rgba(0, 1, 96, 0.49)"
         }, 200);
+      });
+
+      $('.art').bgswitcher({
+        images: ["dims.jpg","dims2.jpg","dims3.jpg","dims4.jpg"],
+        effect: "fade",
+        interval: 1000
       });
     });
   </script>
@@ -98,17 +108,20 @@
     </div>
 
     <div class="articles">
-      <div class="borders2" id="articleborder" style="background-color: rgb(228, 228, 228);">
+      <div class="borders2" id="articleborder" style="background-color: rgb(235, 235, 235);">
         <div class="wrapper">
           <header class="hed">
 
           </header>
           <article class="maine">
-            <h1>Кардиологичен Център Бургас</h1>
+            <h1 style="text-align: center;margin-top: 0px; margin-bottom: 0px; font-size: 27px;">Кардиологичен Център Бургас</h1>
+            <hr id="hrz">
+            <p style="padding: 30px;text-align: justify;font-size: 19px;">Кардиологичен център Бургас е Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img src="crp.png" height="100px" style="padding-right: 30px; float:right;">
           </article>
           <aside class="aside findus">
             <div class="zaglavie">
-              <span>Намерете ни!</span>
+              <span>НАМЕРЕТЕ НИ</span>
             </div>
             <div class="mapouter">
               <div class="gmap_canvas">
@@ -118,7 +131,12 @@
             </div>
           </aside>
           <aside class="aside news">
-            Aside 2
+            <div class="zaglavie">
+              <span style="font-family: 'Alegreya Sans SC', sans-serif;">КАБИНЕТИ</span>
+            </div>
+            <div class="kabineti">
+
+            </div>
           </aside>
           <footer class="foot">
             Footer
@@ -136,6 +154,8 @@
         x.className = "topnav";
       }
     }
+
+    
     </script>
   </body>
 </html>
