@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Кардиологичен център Бургас</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-deinost.css" type="text/css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Exo+2:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script type="jquery.bgswitcher.js">
+
+    </script>
+  </head>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.topnav a').mouseenter(function(){
+        $(this).animate({
+          backgroundColor: "#b0b0b0"
+        }, 200);
+      });
+      $('.topnav a').mouseleave(function(){
+        $(this).animate({
+          backgroundColor: "rgb(237, 237, 237)"
+        }, 200);
+      });
+
+      $('.main').mouseenter(function(){
+        $(this).animate({
+          backgroundColor: "rgba(255, 255, 255, 0.85)"
+        }, 200);
+      });
+      $('.main').mouseleave(function(){
+        $(this).animate({
+          backgroundColor: "rgba(255, 255, 255, 0.49)"
+        }, 200);
+      });
+
+      // Phone widget
+      $('.phone').mouseenter(function(){
+        $(this).animate({
+          backgroundColor: "rgba(0, 1, 96, 0.75)"
+        }, 200);
+      });
+      $('.phone').mouseleave(function(){
+        $(this).animate({
+          backgroundColor: "rgba(0, 1, 96, 0.49)"
+        }, 200);
+      });
+
+      $('.art').bgswitcher({
+        images: ["dims.jpg","dims2.jpg","dims3.jpg","dims4.jpg"],
+        effect: "fade",
+        interval: 1000
+      });
+    });
+  </script>
+
+  <body>
+    <!-- The top bar -->
+    <div class="topbar">
+      <img height="100%"src="logowhite.png" alt="">
+      <div style="float:right; height: 100%;" class="containter">
+        <div class="verticalCenter">
+          <a href="https://www.facebook.com/CardiologyCenterBurgas/" target="_blank"><i style="color:White;" class="fa fa-facebook-official fa-lg"></i></a>
+          <a href="https://www.instagram.com/zakrokaa"><i style="margin-left: 5px;color:White;" class="fa fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- The top navigatoion -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Начало</a>
+      <a href="#">Дейност</a>
+      <a href="#">За нас</a>
+      <a href="#" style="border-right-width: thin;border-right-color: rgb(107, 107, 107);border-right-style: solid;">Връзка</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="art">
+      <div class="borders">
+        <div class="main">
+          <img src="logo.png" alt="">
+        </div>
+        <div class="phone">
+          <img src="logo.png" style="opacity: 0;"alt="">
+          <div class="verticalCenter">
+
+            <span id="phone" style="padding-left: 20px;font-size: 30px;" class="fa-stack">
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-phone fa-stack-1x"></i>
+            </span>
+            <span> 0876/999-539</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="horizbreak">
+
+    </div>
+
+    <div class="articles">
+
+
+
+          <article class="maine" style="background-color: rgb(240, 240, 240);">
+            <p style="font-size: 24px; font-weight: bold;">Кардиологичен Център Бургас предлага:</p>
+            <ol style="font-size: 18px;">
+              <li>Амбулаторни прегледи</li>
+              <li>Преценка необходимостта от провеждане на коронарография</li>
+              <li>Оценка на клапни пороци</li>
+              <li>Преценка необходимостта от кардиохирургично лечение</li>
+              <li>Консултации</li>
+              <li>Предоперативни прегледи</li>
+              <li>Проследяване след кардиохирургични операции</li>
+              <li>Диагностика, проследяване и лечение на ритъмни и проводни нарушения</li>
+              <li>Прегледи, включващи: <ul>
+                <li>ЕКГ;</li>
+                <li>Ехокардиография;</li>
+                <li>Работна ЕКГ проба, определяща коронарен резерв и функционален капацитет</li>
+                <li>Холтер ЕКГ 24-48 часов;</li>
+                <li>Холтер ЕКГ за дългосрочно, самостоятелно ползване и възможност за дистанционно разчитане на резултатите</li>
+              </ul></li>
+            </ol>
+          </article>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+
+    </script>
+  </body>
+</html>
