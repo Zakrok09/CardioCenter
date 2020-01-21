@@ -326,6 +326,11 @@ body, html {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #guwna {
+    height: 0px;
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
