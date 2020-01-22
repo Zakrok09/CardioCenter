@@ -125,8 +125,9 @@ body, html {
 
 
 
-
-
+#phone{
+  font-size: 30px;
+}
 
 
 
@@ -275,6 +276,7 @@ body, html {
   }
 
   #phone {
+    padding-left: 20px;
     font-size: 15px;
   }
 
